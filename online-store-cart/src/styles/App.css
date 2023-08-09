@@ -1,0 +1,165 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cart h3 {
+  margin-left: 45px;
+  font-size: 32px;
+}
+.cart > p {
+  margin-left: 45px;
+}
+.cart .button-add {
+  border-radius: 12px;
+  background-color: white;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  line-height: 32px;
+  margin-right: 10px;
+  margin-left: 45px;
+}
+.cart .button-add:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+.cart .button-order {
+  border-radius: 12px;
+  background-color: white;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  line-height: 32px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.cart .button-order:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.cart-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 45px;
+}
+
+.buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 100px;
+}
+.buttons-wrapper span {
+  width: 25px;
+  text-align: center;
+}
+
+.product-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 220px;
+  gap: 234px;
+  margin-left: 100px;
+}
+
+.button-plus {
+  border-radius: 12px;
+  background-color: white;
+  font-size: 32px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  line-height: 32px;
+  margin-right: 10px;
+}
+.button-plus:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.button-minus {
+  border-radius: 12px;
+  background-color: white;
+  font-size: 32px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+  line-height: 32px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.button-minus:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.button-remove {
+  border-radius: 12px;
+  background-color: white;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+  padding-right: 14px;
+  line-height: 32px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.button-remove:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=App.css.map */
