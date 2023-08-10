@@ -31,9 +31,9 @@ const Home = () => {
               <div className="product" key={product.id}>
                 <h3>{product.title}</h3>
                 <img src={product.image} alt={product.title} />
-                <div className="price">
+                <div className="product-price">
                   <span>Price: ${product.price}</span>
-                  <button className="price__button" onClick={() => handleAddToCart(product)}>
+                  <button className="product-price__button" onClick={() => handleAddToCart(product)}>
                     Add To Cart
                   </button>
                 </div>

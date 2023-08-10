@@ -111,7 +111,7 @@
     text-align: center;
   }
 
-  .price {
+  .product-price {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,7 +123,7 @@
       margin-bottom: 10px;
     }
 
-    .price__button {
+    .product-price__button {
       width: 60%;
       height: 35px;
       border-radius: 5px;
@@ -136,7 +136,7 @@
       transition: background-color 0.5s;
     }
 
-    .price__button:hover {
+    .product-price__button:hover {
       background-color: rgb(150, 50, 50);
     }
   }
