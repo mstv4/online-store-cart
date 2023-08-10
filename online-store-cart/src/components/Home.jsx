@@ -18,18 +18,18 @@ const Home = () => {
       {status === "success" && (
         <>
           <h2>New Arrivals</h2>
-          <div className="products"></div>
-          {products.map((product) => (
-            <div className="product" key={product.id}>
-              <h3>{product.title}</h3>
-              <img src={product.image} alt={product.title} />
-              <div className="details">
-                <span>{product.description}</span>
-                <span className="price">Price: ${product.price}</span>
+          <div className="products">
+            {products.map((product) => (
+              <div className="product" key={product.id}>
+                <h3>{product.title}</h3>
+                <img src={product.image} alt={product.title} />
+                <div className="price">
+                  <span>Price: ${product.price}</span>
+                  <button className="price__button">Add To Cart</button>
+                </div>
               </div>
-              <button>Add To Cart</button>
-            </div>
-          ))}
+            ))}
+          </div>
         </>
       )}
     </div>
