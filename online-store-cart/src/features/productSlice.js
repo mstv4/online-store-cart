@@ -6,13 +6,10 @@ const initialState = {
   status: null,
 };
 
-export const productsFetch = createAsyncThunk(
-  "products/productsFetch",
-  async() => {
-    const response = await axios.get("https://fakestoreapi.com/products")
-    return response?.data;
-  }
-)
+export const productsFetch = createAsyncThunk("products/productsFetch", async () => {
+  const response = await axios.get("https://fakestoreapi.com/products");
+  return response?.data;
+});
 
 const productsSlice = createSlice({
   name: "products",
@@ -29,7 +26,7 @@ const productsSlice = createSlice({
     [productsFetch.rejected]: (state, action) => {
       state.status = "rejected";
     },
-  }
+  },
 });
 
 export default productsSlice.reducer;
