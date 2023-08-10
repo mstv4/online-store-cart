@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
+import { configureStore } from "@reduxjs/toolkit";
 import productReducer, { productsFetch } from "./features/productSlice";
 
 const store = configureStore({
