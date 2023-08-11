@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import SvgArrowLeft from "../media/svgArrowLeft";
 import { addToCart, decreaseCart, removeFromCart, clearCart, getTotals } from "../features/cartSlice";
+import SvgArrowLeft from "../media/svgArrowLeft";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
