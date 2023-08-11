@@ -1,11 +1,17 @@
 import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import SvgArrowLeft from "../media/svgArrowLeft";
-import { addToCart, decreaseCart, removeFromCart } from "../features/cartSlice";
+import { addToCart, decreaseCart, removeFromCart, clearCart, getTotals } from "../features/cartSlice";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getTotals());
+  }, [cart, dispatch]);
+
   const handleRemoveFromCart = (cartItem) => {
     dispatch(removeFromCart(cartItem));
   };
@@ -17,7 +23,11 @@ const Cart = () => {
   const handleIncreaseCart = (cartItem) => {
     dispatch(addToCart(cartItem));
   };
-  
+
+  const handleClearCart = () => {
+    dispatch(clearCart());
+  };
+
   return (
     <div className="cart-container">
       <h2>Shopping Cart</h2>
@@ -50,22 +60,24 @@ const Cart = () => {
                     <button onClick={() => handleRemoveFromCart(cartItem)}>Remove</button>
                   </div>
                 </div>
-                <div className="cart-product-price">${cartItem.price}</div>
+                <div className="cart-product-price">${cartItem.price.toFixed()}</div>
                 <div className="cart-product-quantity">
                   <button onClick={() => handleDecreaseCart(cartItem)}>-</button>
                   <div className="count">{cartItem.cartQuantity}</div>
                   <button onClick={() => handleIncreaseCart(cartItem)}>+</button>
                 </div>
-                <div className="cart-product-total-price">${cartItem.price * cartItem.cartQuantity}</div>
+                <div className="cart-product-total-price">${cartItem.price.toFixed() * cartItem.cartQuantity}</div>
               </div>
             ))}
           </div>
           <div className="cart-summary">
-            <button className="clear-cart">Clear Cart</button>
+            <button className="clear-cart" onClick={() => handleClearCart()}>
+              Clear Cart
+            </button>
             <div className="cart-checkout">
               <div className="subtotal">
                 <span>Subtotal</span>
-                <span className="amount">${cart.cartTotalAmout}</span>
+                <span className="amount">${cart.cartTotalAmount.toFixed()}</span>
               </div>
               <p>Free Shipping</p>
               <button>Check out</button>

@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import SvgBag from "../media/svgBag";
 
 const NavBar = () => {
+  const { cartTotalQuantity } = useSelector((state) => state.cart);
+
   return (
     <nav className="nav-bar">
       <Link to="/">
@@ -11,7 +14,7 @@ const NavBar = () => {
         <div className="nav-bag">
           <SvgBag />
           <span className="bag-quantity">
-            <span>3</span>
+            <span>{cartTotalQuantity}</span>
           </span>
         </div>
       </Link>
