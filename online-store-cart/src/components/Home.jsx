@@ -21,8 +21,8 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      {status === "pending" && <span class="loader"></span>}
-      {status === "rejected" && <span class="error-data">Error loading data.</span>}
+      {status === "pending" && <span className="loader"></span>}
+      {status === "rejected" && <span className="error-data">Error loading data.</span>}
       {status === "success" && (
         <>
           <h2>New Arrivals</h2>
