@@ -41,6 +41,7 @@ const Cart = () => {
             </Link>
           </div>
         </div>
+        
       ) : (
         <div>
           <div className="titles">
@@ -90,6 +91,7 @@ const Cart = () => {
             </div>
           </div>
         </div>
+        
       )}
     </div>
   );

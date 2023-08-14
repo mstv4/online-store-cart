@@ -76,7 +76,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: gray;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 .not-found h2 {
   font-size: 40px;
@@ -90,6 +90,7 @@
 /* home */
 .home-container {
   padding: 2rem 4rem;
+  min-height: 100vh;
 }
 .home-container h2 {
   font-size: 40px;
@@ -234,6 +235,14 @@
 /* cart */
 .cart-container {
   padding: 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
 }
 .cart-container h2 {
   font-weight: 500;
@@ -437,4 +446,123 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 60vh;
+}
+
+/* footer */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: rgb(0, 0, 0);
+  padding: 2rem 4rem;
+  text-align: center;
+  color: white;
+}
+.footer .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  width: 20%;
+  gap: 10px;
+}
+.footer .brand .brand-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: rgb(194, 53, 53);
+}
+.footer .brand p {
+  font-size: 12px;
+  font-weight: 500;
+  width: 80%;
+}
+.footer .brand .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  color: rgb(194, 53, 53);
+}
+.footer .about,
+.footer .partnership,
+.footer .information,
+.footer .download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 20%;
+}
+.footer .about a,
+.footer .partnership a,
+.footer .information a,
+.footer .download a {
+  text-decoration: none;
+  color: rgb(194, 53, 53);
+}
+.footer .about a:hover,
+.footer .partnership a:hover,
+.footer .information a:hover,
+.footer .download a:hover {
+  text-decoration: underline;
+}
+.footer .about p,
+.footer .partnership p,
+.footer .information p,
+.footer .download p {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  width: 20%;
+}
+.footer .about li,
+.footer .partnership li,
+.footer .information li,
+.footer .download li {
+  list-style: none;
+  font-size: 12px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=App.css.map */

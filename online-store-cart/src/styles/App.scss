@@ -54,7 +54,7 @@
   align-items: center;
   justify-content: center;
   color: gray;
-  min-height: 80vh;
+  min-height: 100vh;
 
   h2 {
     font-size: 40px;
@@ -71,6 +71,7 @@
 
 .home-container {
   padding: 2rem 4rem;
+  min-height: 100vh;
 
   h2 {
     font-size: 40px;
@@ -182,6 +183,9 @@
 
 .cart-container {
   padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
   h2 {
     font-weight: 500;
@@ -371,4 +375,84 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgb(0, 0, 0);
+  padding: 2rem 4rem;
+  text-align: center;
+  color: white;
+
+  .brand {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 20%;
+    gap: 10px;
+
+    .brand-logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: rgb(194, 53, 53);
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      width: 80%;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: rgb(194, 53, 53);
+    }
+  }
+
+  .about,
+  .partnership,
+  .information,
+  .download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 20%;
+
+    a {
+      text-decoration: none;
+      color: rgb(194, 53, 53);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      width: 20%;      
+    }
+
+    li {
+      list-style: none;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
 }
