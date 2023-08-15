@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { productsFetch } from "../features/productSlice";
 import { addToCart } from "../features/cartSlice";
+import Products from "./Product";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -28,16 +29,7 @@ const Home = () => {
           <h2>New Arrivals</h2>
           <div className="products">
             {products.map((product) => (
-              <div className="product" key={product.id}>
-                <h3>{product.title}</h3>
-                <img src={product.image} alt={product.title} />
-                <div className="product-price">
-                  <span>Price: ${product.price.toFixed()}</span>
-                  <button className="product-price__button" onClick={() => handleAddToCart(product)}>
-                    Add To Cart
-                  </button>
-                </div>
-              </div>
+              <Products key={product.id} product={product} handleAddToCart={handleAddToCart} />
             ))}
           </div>
         </>
