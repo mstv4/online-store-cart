@@ -1,0 +1,35 @@
+/* loader */
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border: 5px solid #a1a1a1;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .error-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    min-height: 80vh;
+    font-size: 25px;
+    font-weight: 700;
+  }

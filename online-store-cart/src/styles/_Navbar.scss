@@ -1,0 +1,40 @@
+/* navbar */
+
+.nav-bar {
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+  
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 0.3rem;
+    }
+  
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  
+  .nav-bag {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bag-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    background: rgb(194, 53, 53);
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+  }
