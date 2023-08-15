@@ -15,14 +15,18 @@ function App() {
     <div>
       <BrowserRouter>
         <ToastContainer />
-        <NavBar />
-        <Routes>
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/not-found" element={<NotFound />} />
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/not-found" />} />
-        </Routes>
-        <Footer />
+        <div className="main-container">
+          <NavBar />
+          <div className="route-bar">
+            <Routes>
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/not-found" element={<NotFound />} />
+              <Route path="/" element={<Home />} />
+              <Route path="*" element={<Navigate to="/not-found" />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
       </BrowserRouter>
     </div>
   );
