@@ -1,75 +1,74 @@
 /* home */
 
 .home-container {
-    padding: 2rem 4rem;
-    min-height: 100vh;
-  
-    h2 {
-      font-size: 40px;
-      font-weight: 500;
-      text-align: center;
-    }
+  padding: 2rem 4rem;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
   }
-  
-  .products {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.product {
+  width: 275px;
+  max-width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+
+  img {
+    width: 65%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .product {
-    width: 275px;
-    max-width: 100%;
-    height: 500px;
+
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .product-price {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 1rem auto;
-    padding: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 20px;
-  
-    img {
-      width: 65%;
-      margin-top: 1rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    h3 {
-      font-size: 18px;
-      font-weight: 500;
+    align-items: center;
+
+    span {
+      font-size: 20px;
+      font-weight: 700;
       text-align: center;
+      margin-bottom: 10px;
     }
-  
-    .product-price {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  
-      span {
-        font-size: 20px;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 10px;
-      }
-  
-      .product-price__button {
-        width: 60%;
-        height: 35px;
-        border-radius: 5px;
-        font-weight: 500;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        background-color: rgb(39, 119, 106);
-        color: white;
-        transition: background-color 0.5s;
-      }
-  
-      .product-price__button:hover {
-        background-color: rgb(150, 50, 50);
-      }
+
+    .product-price__button {
+      width: 60%;
+      height: 35px;
+      border-radius: 5px;
+      font-weight: 500;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: rgb(39, 119, 106);
+      color: white;
+      transition: background-color 0.5s;
+    }
+
+    .product-price__button:hover {
+      background-color: rgb(150, 50, 50);
     }
   }
+}

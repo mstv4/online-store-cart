@@ -12,7 +12,7 @@ import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
-    <div>
+    <div className="wrapper">
       <BrowserRouter>
         <ToastContainer />
         <div className="main-container">
