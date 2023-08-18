@@ -5,6 +5,7 @@
 @import "Loader";
 @import "Navbar";
 @import "Notfound";
+@import "Modal";
 
 body {
   height: 100vh;
@@ -33,5 +34,5 @@ body {
 }
 
 .route-bar {
-  flex: 1;     
+  flex: 1;
 }

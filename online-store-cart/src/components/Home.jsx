@@ -20,6 +20,10 @@ const Home = () => {
     navigate("/cart");
   };
 
+  const handleAddToCartAndClose = (product) => {
+    dispatch(addToCart(product));    
+  };
+
   return (
     <div className="home-container">
       {status === "pending" && <span className="loader"></span>}
@@ -29,7 +33,12 @@ const Home = () => {
           <h2>New Arrivals</h2>
           <div className="products">
             {products.map((product) => (
-              <Products key={product.id} product={product} handleAddToCart={handleAddToCart} />
+              <Products
+                key={product.id}
+                product={product}
+                handleAddToCart={handleAddToCart}
+                handleAddToCartAndClose={handleAddToCartAndClose}
+              />
             ))}
           </div>
         </>
